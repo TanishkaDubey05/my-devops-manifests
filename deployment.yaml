@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: tanishka-app
-        image: 325771561688.dkr.ecr.ap-south-1.amazonaws.com/tanishka-app:2
+        image: 325771561688.dkr.ecr.ap-south-1.amazonaws.com/tanishka-app:3
         ports:
         - containerPort: 3000
