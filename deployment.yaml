@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tanishka-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tanishka-app
+  template:
+    metadata:
+      labels:
+        app: tanishka-app
+    spec:
+      containers:
+      - name: tanishka-app
+        image: 325771561688.dkr.ecr.ap-south-1.amazonaws.com/tanishka-app:latest
+        ports:
+        - containerPort: 3000
